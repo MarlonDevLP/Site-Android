@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+header {
+    background-color:#00A83B ;
+    padding-top: 20px;
+    border-radius: 7px, 7px, 1px, 1px;
+}
+nav {
+    background-color:#00A83B ;
+    
+}
+
+body {
+    background-color: #00e66842
+}
+h2 {
+    background-color: #02f55771;
+    border-radius: 4     px;
+}
+aside {
+    background-color: #02f55770;
+    border-radius: 5px;
+    
+}
+aside > h3 {
+    background-color: #009936;
+    border-radius: 5px 5px 0px 0px;
+}
+footer {
+    background-color:#00A83B;
+
+}
