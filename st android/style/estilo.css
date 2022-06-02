@@ -29,6 +29,32 @@ header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     padding-top: 2px;
 }
+a.externo::after {
+    content: "\1F517";
+}
+nav {
+    border: 0px 0px 2px 2px;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    width: 1200;
+    height: 40px;
+    padding: 6px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 1.2em;
+    transition-duration: 0.4s;
+    max-width: 600px;
+    min-width: 320;
+    margin: auto;
+}
+nav > a:hover {
+    border-radius: 3px;
+    background-color: #009E4B;
+    color: var(--cor0);
+} 
 main {
     max-width: 810px;
     min-width: 320px;
@@ -44,13 +70,58 @@ main > article > p {
     padding-left: 1px;
     padding-right: 1px;
 }
+main p {
+    margin: 15px 0px;
+    text-align:justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.3em;
+
+}
+main strong {
+    color: var(--cor0);
+    background-color: #00ff7b44;
+    padding: 2px 4px;
+    border-radius: 3px 0px 3px 0px;
+}
+main a {
+    color: var(--cor4);
+    background-color: var(--cor0);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px 0px 3px 0px;
+    padding: 2px 4px;
+}
+main a:hover {
+    text-decoration: unset;
+    color: blue;
+}
+main > article > img {
+    width: 350px;
+    display: block;
+    margin: auto;
+}
 main img {
     width: 100%;
 }
-main img.pequena {
-    width: 50%;
-    display: block;
-    margin: auto;
+div.video {
+    background-color: var(--cor3);
+    margin: 0px -10px 30px -10px;
+    padding: 10px;
+    padding-bottom: 56.4%;
+    position: relative;
+    border-radius: 8px;
+}
+div.video > iframe {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+body {
+    background-color: #00e66842;
+    font-family: var(--font-padrao);
 }
 body > header > h1 {
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.651);
@@ -58,7 +129,7 @@ body > header > h1 {
     margin-bottom: 25px;
     color: white;
     font-family: var(--font-Android);
-    font-size: 2.5em;
+    font-size: 3.0em;
 }
 body > header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.548);
@@ -66,46 +137,20 @@ body > header > p {
     font-size: 1.2em;
     max-width: 600px;
     margin: auto;
-}
-body > nav {
-    border: 0px 0px 2px 2px;
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
-    width: 1200;
-    height: 40px;
-    padding: 6px; 
-}
-nav > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 2px;
-    font-size: 1.2em;
-    transition-duration: 0.4s;
-    max-width: 600px;
-    min-width: 320;
-    margin: auto;
-}
-nav > a:hover {
-    border-radius: 3px;
-    background-color: #009E4B;
-    color: var(--cor2);
-}
-body {
-    background-color: #00e66842;
-    font-family: var(--font-padrao);
-}
-h1 {
+} 
+main h1 {
     color: var(--cor0);
     font-family: var(--font-Android);
 }
-h2 {
-    background-color:var(--cor4);;
-    border-radius: 4px;
+main h2 {
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    border-radius: 6px;
     font-family: var(--font-Android);
 }
 aside {
     background-color: #02f55770;
     border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.671);
     
 }
 aside > h3 {
@@ -114,12 +159,22 @@ aside > h3 {
     border-radius: 5px 5px 0px 0px;
 }
 aside > ul {
-    padding-left: 20px;
-    padding-right: 20px;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\2714\00A0\00A0";
 }
 footer {
-    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.541);
+    text-align: center;
     color: white;
     background-color:#00A83B;
-
+    padding: 3px;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #C2EB17;
+}
+footer a:hover {
+    color: var(--cor0);
+    background-color: var(--cor3);
 }
